@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Results from <%=shopName%></title>
+    <link rel="stylesheet"  type="text/css" href="/main.css" />
+  </head>
+  <body>
+    <h1><%=shopName%></h1>
+    <h2>Results:</h2>
+    <ul>
+        <% for(book in availableBooks){ %>
+        <li><%= availableBooks[book].name + ", £" + availableBooks[book].price %></li>
+        <% } %>
+    </ul>
+  </body>
+</html>
